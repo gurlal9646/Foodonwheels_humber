@@ -1,114 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
- <header>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/addcard.css" />
-  <script src="/js/addcard.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Food on wheels</title>
-  <nav class="navbar">
-    <div class="logo">
-     Food on wheels
-   </div>
-    <ul class="nav-links">
-      <div class="menu">
-        <li><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a></li>
-        <li><a href="#"><i class="fa fa-list-alt" ></i>&nbsp;&nbsp;Orders</a></li>
-        <li><a href="#"><i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites</a></li>
-        <li><a href="payment.html"><i class="fa fa-credit-card-alt" ></i>&nbsp;&nbsp;Payments</a></li>
-        <li><a href="#"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a></li>
-        <li><a href="#"><i class="fa fa-bell" ></i>&nbsp;&nbsp;Notifications</a></li>
-        <li class="profiles">
-           <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Profle</a>
-           <ul class="dropdown">
-             <li><a href="#"><i class="fa fa-cog" style="float: left;"></i>Settings </a></li>
-             <li><a href="#"><i class="fa fa-key" style="float: left;"></i>Change password</a></li>
-             <li><a href="#"><i class="fa fa-sign-out" style="float: left;"></i>Logout</a></li>
-           </ul>
-         </li>
-      </div>
-    </ul>
-  </nav>
- </header>
- <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/addcard.css" />
+    <script src="/js/addcard.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Food on wheels</title>
+  </head>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Food on wheels</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li>
+            <a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;Orders</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites</a>
+          </li>
+          <li>
+            <a href="payment.html"
+              ><i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;Payments</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-bell"></i>&nbsp;&nbsp;Notifications</a>
+          </li>
+          <li class="profiles">
+            <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Profle</a>
+            <ul class="dropdown">
+              <li>
+                <a href="#"
+                  ><i class="fa fa-cog" style="float: left"></i>Settings
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-key" style="float: left"></i>Change
+                  password</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-sign-out" style="float: left"></i>Logout</a
+                >
+              </li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <body>
     <div class="row">
-        <div class="col-75">
-          <div class="container">
-            <form>
-              <div class="row">      
-                <div class="col-50">
-                  <h3>Enter card details</h3>
-                  <label for="fname">Accepted Cards</label>
-                  <div class="icon-container">
-                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+      <div class="col-75">
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-50">
+                <h3>Enter card details</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color: navy"></i>
+                  <i class="fa fa-cc-amex" style="color: blue"></i>
+                  <i class="fa fa-cc-mastercard" style="color: red"></i>
+                  <i class="fa fa-cc-discover" style="color: orange"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input
+                  type="text"
+                  id="cname"
+                  name="cardname"
+                  placeholder="Mark"
+                />
+                <label for="ccnum">Card number</label>
+                <input
+                  type="text"
+                  id="cardnumber"
+                  name="cardnumber"
+                  placeholder="1111-2222-3333-4444"
+                />
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="expmonth">Expiry Month</label>
+                    <select class="monthdropdown" id="expMonth" name="expMonth">
+                      <option value="">Month *</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
                   </div>
-                  <label for="cname">Name on Card</label>
-                  <input type="text" id="cname" name="cardname" placeholder="Mark">
-                  <label for="ccnum">Card number</label>
-                  <input type="text" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444">
-                 
-                  <div class="row">
-                    <div class="col-25">
-                        <label for="expmonth">Expiry Month</label>
-                        <select class="monthdropdown" id="expMonth" name="expMonth">
-                            <option value="">Month *</option>
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                          </select>
-                      </div>
-                    <div class="col-25">
-                      <label for="expyear">Expiry Year</label>
-                      <select  class="monthdropdown" id="expYear" name="expYear">
-                        <option value="">Year *</option>
-                        <option value="22">2022</option>
-                        <option value="23">2023</option>
-                        <option value="24">2024</option>
-                        <option value="25">2025</option>
-                        <option value="26">2026</option>
-                      </select>
-                    </div>
-                    <div class="col-25">
-                      <label for="cvv">CVV</label>
-                      <input type="text" id="cvv" name="cvv" placeholder="352">
-                    </div>
+                  <div class="col-25">
+                    <label for="expyear">Expiry Year</label>
+                    <select class="monthdropdown" id="expYear" name="expYear">
+                      <option value="">Year *</option>
+                      <option value="22">2022</option>
+                      <option value="23">2023</option>
+                      <option value="24">2024</option>
+                      <option value="25">2025</option>
+                      <option value="26">2026</option>
+                    </select>
+                  </div>
+                  <div class="col-25">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" />
                   </div>
                 </div>
-                
               </div>
-              <input type="submit" value="Save" class="btn" onclick="return save()">
-            </form>
-          </div>
+            </div>
+            <input
+              type="submit"
+              value="Save"
+              class="btn"
+              onclick="return save()"
+            />
+          </form>
         </div>
+      </div>
     </div>
-
- </body>
- <footer>
-  <div class="footer-content">
+  </body>
+  <footer>
+    <div class="footer-content">
       <h4>Food on wheels</h4>
-      <p>Food on wheels is most popular online food ordering website in canada.</p>
+      <p>
+        Food on wheels is most popular online food ordering website in canada.
+      </p>
       <ul class="media">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-       </ul>
-  </div>
-</footer>
- </html>
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>
