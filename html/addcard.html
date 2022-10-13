@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/addcard.css" />
     <script src="/js/addcard.js"></script>
     <link
@@ -15,59 +15,52 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="logo">Food on wheels</div>
-        <ul class="nav-links">
-          <div class="menu">
-            <li>
-              <a href="#"
-                ><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;Orders</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites</a>
-            </li>
-            <li>
-              <a href="payment.html"
-                ><i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;Payments</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa fa-bell"></i>&nbsp;&nbsp;Notifications</a
-              >
-            </li>
-            <li class="profiles">
-              <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Profle</a>
-              <ul class="dropdown">
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-cog" style="float: left"></i>Settings
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-key" style="float: left"></i>Change
-                    password</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-sign-out" style="float: left"></i>Logout</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </div>
+      <img id="app_logo" src="../images/app_logo.jpeg" />
+      <nav id="menu_bar">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-bell"></i></a>
+          </li>
+          <li id="profile">
+            <a href="#"> <i class="fa fa-user"></i></a>
+            <ul class="profile_dropdown dropdown">
+              <li>
+                <a href="#">
+                  <i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-list-alt"></i>&nbsp;&nbsp;My Orders History
+                </a>
+              </li>
+              <li>
+                <a href="payment.html">
+                  <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
+                </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-key"></i>&nbsp;&nbsp;Change password
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
+    <main>
     <div class="row">
       <div class="col-75">
         <div class="container">
@@ -144,30 +137,54 @@
         </div>
       </div>
     </div>
-  </body>
+  </main>
   <footer>
-    <div class="footer-content">
-      <h4>Food on wheels</h4>
-      <p>
-        Food on wheels is most popular online food ordering website in canada.
-      </p>
-      <ul class="media">
-        <li>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-google-plus"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-linkedin-square"></i></a>
-        </li>
-      </ul>
+    <div id="footer_menu_container">
+      <div class="footer_menu">
+        <ul>
+          <li><h3>We are Food On Wheels</h3></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer_menu">
+        <ul>
+          <li><h3>Get Help</h3></li>
+          <li><a href="">How to Order?</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer_menu">
+        <ul>
+          <li><h3>Call Us</h3></li>
+          <li class="link">Toronto: +16783451298, +16934812468</li>
+        </ul>
+        <ul id="social_links_container">
+          <li><h3>Connect With Us</h3></li>
+          <li class="social_links">
+            <a id="facebook" href=""><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="social_links">
+            <a id="twitter" href=""><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="social_links">
+            <a id="google" href=""><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li class="social_links">
+            <a id="youtube" href=""><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="social_links">
+            <a id="linkedin" href=""><i class="fa fa-linkedin-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="copyrights">
+      <p><a href="">Terms Of Usage</a> | <a href="">Privacy Policy</a></p>
+      <p>&copy; 2022 Food on wheels. All Rights Reserved.</p>
     </div>
   </footer>
+  </body>
+ 
 </html>
