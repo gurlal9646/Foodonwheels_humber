@@ -1,0 +1,50 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+main {
+  height: 1000px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  color: #13ca75;
+}
+
+#wrapper {
+  margin: 2em;
+  width: 450%;
+  height: 350%;
+  min-width:960px;
+  max-width:1825px;
+}
+
+#middle-div {
+  margin: 0px 1px 0px 1px;
+  width: 30%;
+  height: 100%;
+  font-size: 15px;
+}
+
+#contact {
+  font-size: 15px;
+  font-style: italic;
+}
+
+#right-div {
+  margin-top: 77px;
+  width: 50%;
+  font-size: 20px;
+}
+#food-text {
+font-weight: bold;
+color: #13ca75;
+}
+
+.float-class {
+  float: left;
+  margin-left: 0px;
+}
+
