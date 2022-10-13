@@ -1,0 +1,24 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    background: linear-gradient(90des,#0e3959 0%, #0e3959 30%, #03a9f5 30%, #03a9f5 100%);
+}
+.contactUs
+{
+    position: relative;
+    width:100%
+    padding:40px 100px:
+}
+.contactUs .title
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
