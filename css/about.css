@@ -1,31 +1,65 @@
-body {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+.page-wrap {
+  display: flex;
+/*  padding: 0px 0px 20px 0px; */
+  flex-flow:row wrap;
+}
+
+/*
+.page-wrap > *{
+flex: 1 50%;
+}*/
+
+aside {
+ 
   background-color: white;
+  display: flex;
+  /*height: 80px;*/
+ /* justify-content: space-between; */
+  padding: 20px;
+  /*top: 0;*/
+  width: 30%;
+  flex-direction: column;
+  flex : 1 0 50px;
+  font-size: 20px;
 }
-
-main {
-  height: 1000px;
-}
-
-h1, h2, h3 {
-  margin: 0;
-  padding: 0;
+aside h1{
+  font-size: 200%;
   color: #13ca75;
 }
 
-#wrapper {
-  margin: 2em;
-  width: 450%;
-  height: 350%;
-  min-width:960px;
-  max-width:1825px;
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex : 1 1 500px;
+ /* justify-content: space-between;*/
+ /* padding: 20px 40px; */
+  width: 70%;
+ /* margin: 2em; */
+  font-size: 20px;
 }
 
-#middle-div {
-  margin: 0px 1px 0px 1px;
-  width: 30%;
-  height: 100%;
-  font-size: 15px;
+section h3{
+  font-size: 120%;
+  color: #13ca75; 
+}
+
+section h2{
+  color: #13ca75; 
+}
+
+/*
+@media screen and (min-width: 700px) {
+.page-wrap { flex: 1; }
+section	{  }
+aside {
+    flex-basis: auto;
+}
+}*/
+
+#food-text {
+  font-weight: bold;
+  color: #13ca75;
 }
 
 #contact {
@@ -33,18 +67,16 @@ h1, h2, h3 {
   font-style: italic;
 }
 
-#right-div {
-  margin-top: 77px;
-  width: 50%;
-  font-size: 20px;
+@media all and (min-width: 700px) {
+  .page-wrap{
+      flex: 3;
+  }
 }
-#food-text {
-font-weight: bold;
-color: #13ca75;
+@media screen and (min-width: 500px) {
+  aside {
+      flex: 1;
+  }
+  section {
+    padding: 0;
+  }
 }
-
-.float-class {
-  float: left;
-  margin-left: 0px;
-}
-
