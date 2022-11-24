@@ -21,8 +21,8 @@ Login, signup, forgot password – reset password
 ## Yogesh pages assigned: 
 	Support Contact, FAQs, Coupons/
 	
-Features:
-1.	Login :- Requires user identification such as username or a password.
+## Brief Features Description:
+-	Login :- Requires user identification such as username or a password.
 2.	Signup :-  Drives registrations from new users.
 3.	Forgot Password(otp) :- Provide a link that allows users who have forgotten their password to retrieve it.
 4.	Reset Password :-  Makes a user reset the password who has forgotten his password.
