@@ -33,7 +33,7 @@ Login, signup, forgot password – reset password
 -       Orders history:- To track past orders and purchases.
 -	Order details:- Provides summary information on the order, the order timeline.
 -	Support Contacts :- Allows customer to contact the support team.
--	FAQs :- This page saves hours worth of sales calls by listing common questions people usually asks about products and services.
+-	FAQs:- This page saves hours worth of sales calls by listing common questions people usually asks about products and services.
 -	Notifications :Timely updates that encourages users engagement.
 -	Coupons:- Offering discounts to boost the business.
 -	About:- Will provide information to visitors about what do the company do.
