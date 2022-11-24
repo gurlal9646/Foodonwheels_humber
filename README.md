@@ -1,7 +1,7 @@
-#Team Name: GGYNS
-##Team Lead: Gurlal Singh
-##Team Members: Gurlal Singh, Yogesh kakkar, Garima wadhwa, Nitish Sharma, Susant Shrestha
-Project Name: 
+# Team Name: GGYNS
+## Team Lead: Gurlal Singh
+## Team Members: Gurlal Singh, Yogesh kakkar, Garima wadhwa, Nitish Sharma, Susant Shrestha
+## Project Name: 
 Food On Wheels
 Targeted Audience:
 Everyone
