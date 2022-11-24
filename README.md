@@ -3,11 +3,11 @@
 ## Team Members: Gurlal Singh, Yogesh kakkar, Garima wadhwa, Nitish Sharma, Susant Shrestha
 ## Project Name: 
 Food On Wheels
-Targeted Audience:
-Everyone
+## Targeted Audience:
+Every individual who want to order food online.
 Project objective & Technical considerations: 
 Food ordering website to order food from nearby outlets and restaurants using HTML, CSS, JAVA SCRIPT,JSON.
-Features:
+##  Features:
 1.	Login :- Requires user identification such as username or a password.
 2.	Signup :-  Drives registrations from new users.
 3.	Forgot Password(otp) :- Provide a link that allows users who have forgotten their password to retrieve it.
