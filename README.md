@@ -29,20 +29,14 @@ Login, signup, forgot password – reset password
 -	Dashboard: List of Outlets, Short description, Outlet names, Location, List of recommended food items
 -	Outlet detail page: List of menus, Categories, Full description, Ratings & Reviews
 -	Cart:- Shows all items that a customer has added to the cart for ordering food.
--	Payment Methods: Allows a customer to pay for the ordered items via various methods easily and securely.
---	List added cards
-b.	Add new card
-c.	Cash on delivery
-9.	Orders history:- To track past orders and purchases.
-10.	Order details:- Provides summary information on the order, the order timeline.
-11.	Support Contacts :- Allows customer to contact the support team.
-12.	FAQs :- This page saves hours worth of sales calls by listing common questions people usually askes about products and services.
-13.	Notifications :Timely updates that encourages users engagement.
-14.	Coupons:- Offering discounts to boost the business.
-15.	About:- Will provide information to visitors about what do the company do.
-16.	Favorites:- Will help user to save information abut their favorite food items and outlets.
-17.	Settings
-a.	Update your profile
-b.	Change password
-c.	Delete account
+-	Payment Methods: List added cards, Add new card, Cash on delivery
+- Orders history:- To track past orders and purchases.
+-	Order details:- Provides summary information on the order, the order timeline.
+-	Support Contacts :- Allows customer to contact the support team.
+-	FAQs :- This page saves hours worth of sales calls by listing common questions people usually askes about products and services.
+-	Notifications :Timely updates that encourages users engagement.
+-	Coupons:- Offering discounts to boost the business.
+-	About:- Will provide information to visitors about what do the company do.
+-	Favorites:- Will help user to save information abut their favorite food items and outlets.
+-	Settings: Update your profile, Change password, Delete account
 
