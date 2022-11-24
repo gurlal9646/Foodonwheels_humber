@@ -1,0 +1,40 @@
+{
+    "cards":[
+    {
+    "name":"Gurlal",
+    "card_last_four":"3456",
+    "card_image":"/images/Discover.svg",
+    "expiry_date":"March 2025"
+    },
+    {
+        "name":"Yogesh",
+        "card_last_four":"3454",
+        "card_image":"/images/Discover.svg",
+        "image_alt":"Discover",
+        "expiry_date":"March 2025"
+    },
+    {
+        "name":"Nitish",
+        "card_last_four":"3346",
+        "card_image":"/images/American.svg",
+        "image_alt":"American",
+        "expiry_date":"March 2025"
+    },
+    {
+        "name":"Garima",
+        "card_last_four":"6756",
+        "card_image":"/images/Visa.svg",
+        "image_alt":"Visa",
+        "expiry_date":"March 2025"
+    },
+    {
+        "name":"Susant",
+        "card_last_four":"6756",
+        "card_image":"/images/mastercard.svg",
+        "image_alt":"MasterCard",
+        "expiry_date":"March 2025"
+    }
+
+    ]
+
+}
