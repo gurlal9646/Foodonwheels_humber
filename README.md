@@ -30,7 +30,7 @@ Login, signup, forgot password – reset password
 -	Outlet detail page: List of menus, Categories, Full description, Ratings & Reviews
 -	Cart:- Shows all items that a customer has added to the cart for ordering food.
 -	Payment Methods: List added cards, Add new card, Cash on delivery
--       Orders history:- To track past orders and purchases.
+-       Orders history:-  To track past orders and purchases.
 -	Order details:- Provides summary information on the order, the order timeline.
 -	Support Contacts :- Allows customer to contact the support team.
 -	FAQs:- This page saves hours worth of sales calls by listing common questions people usually asks about products and services.
