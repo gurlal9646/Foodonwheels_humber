@@ -13,13 +13,13 @@ Food ordering website to order food from nearby outlets and restaurants using HT
 ## Nitish pages assigned:
 Login, signup, forgot password – reset password
 ## Garima pages assigned:
-	Settings, Favorites, About
+Settings, Favorites, About
 ## Gurlal pages assigned:
-	Outlet detail page, Cart, Payment methods
+Outlet detail page, Cart, Payment methods
 ## Susant pages assigned:
-	Dashboard, Order history, Order details.
+Dashboard, Order history, Order details.
 ## Yogesh pages assigned: 
-	Support Contact, FAQs, Coupons/
+Support Contact, FAQs, Coupons/
 	
 ## Brief Features Description:
 -	Login :- Requires user identification such as username or a password.
