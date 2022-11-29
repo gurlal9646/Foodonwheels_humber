@@ -1,0 +1,109 @@
+.page-wrap {
+    display: flex;
+  /*  padding: 0px 0px 20px 0px; */
+    flex-flow:column wrap;
+  }
+  
+  /*
+  .page-wrap > *{
+  flex: 1 50%;
+  }*/
+  
+  aside {
+    background-image: linear-gradient(to top, white 0%, rgb(218, 218, 13) 100%);
+    background-color: white;
+    display: flex;
+    /*height: 80px;*/
+   /* justify-content: space-between; */
+    padding: 20px;
+    /*top: 0;*/
+    width: 100%;
+    flex-direction: column;
+    flex : 1 0 50px;
+    font-size: 20px;
+    margin-top: 0%;
+  }
+  aside h1{
+    font-size: 200%;
+    color: white;
+  }
+  
+ .product-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: right;
+   
+ }
+
+ .product-class img{
+    height: 150px ;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    margin: 2.5px;
+   
+ }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex : 1 1 500px;
+   /* justify-content: space-between;*/
+   /* padding: 20px 40px; */
+    width: 100%;
+   /* margin: 2em; */
+    font-size: 20px;
+  }
+  
+  section h3{
+    font-size: 120%;
+    color: #13ca75; 
+  }
+  
+  section h2{
+    color: rgb(61, 61, 19); 
+  }
+  
+  /*
+  @media screen and (min-width: 700px) {
+  .page-wrap { flex: 1; }
+  section	{  }
+  aside {
+      flex-basis: auto;
+  }
+  }*/
+
+  .fow_fee {
+    font-size: 15px;
+    color: #ca13a2;
+  }
+
+  .res_desc {
+    font-size: 20px;
+    color: #13ca75;
+  }
+
+
+  
+  #contact {
+    font-size: 15px;
+    font-style: italic;
+  }
+  
+  @media all and (min-width: 700px) {
+    .page-wrap{
+        flex: 3;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    aside {
+        flex: 1;
+    }
+    section {
+      padding: 0;
+    }
+  }
+  

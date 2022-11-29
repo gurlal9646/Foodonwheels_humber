@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- title of the page -->
+    <title>Settings | Restaurant</title>
+    <!-- set the viewport of the page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/payment.css" />
+    <!-- linking external stylesheet -->
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/settings.css" />
+    <!-- favicon of the page -->
+    <link rel="icon" type="image/x-icon" href="../images/app_logo.jpeg" />
+    <!-- to use the font awesome icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Food on wheels</title>
   </head>
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <header>
       <img id="app_logo" src="../images/app_logo.jpeg" />
       <nav id="menu_bar">
@@ -27,7 +31,7 @@
             <a href="#"> <i class="fa fa-user"></i></a>
             <ul class="profile_dropdown dropdown">
               <li>
-                <a href="#">
+                <a href="favourites.html">
                   <i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites
                 </a>
               </li>
@@ -37,12 +41,12 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="payment.html">
                   <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
                 </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
+                <a href="settings.html"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
               </li>
               <li>
                 <a href="#">
@@ -59,21 +63,41 @@
         </ul>
       </nav>
     </header>
-<main>
-    <div style="display: flex; justify-content: flex-end">
-      <a class="button button1" href="addcard.html" class="button">Add New Card</a>
-    </div>
-
-    <div id="cardsparent" class="rowaddcard">
-
-    </div>
+    <main>
+      <!-- Add the code in here -->
+      <div class="page-wrap">
+            <!-- Food On Wheels Settings page -->
+            <section>
+            <!-- Link to webpage -->
+            <h3><a href="dashboard.html">Home</a>&nbsp;&nbsp;</h3>
+            <br/>
+            <h2>Settings</h2>
+            <p><u>v1.0.0</u></p>
+            <br/><br/>
+            <a class="button" href="settings_AccInfo.html">Edit Account information</a>
+            <p>Change your name, description and profile photo.</p>
+            <br/>
+            <a class="button" href="settings_AccSettng.html">Account Settings</a>
+            <p>Change your email or delete your account.</p>
+            <br/>
+            <a class="button" href="abc.html">Notification Settings</a>
+            <p>Define what emails and notifications you want to see.</p>
+            <br/>
+            <a class="button" href="abc.html">Add a place</a>
+            <p>In case we are missing something.</p>
+            <br/>
+            <a class="button" href="abc.html">Update saved addresses</a>
+            <p>Save addresses on your account so you can quickly select where you’d like your order delivered</p>
+            <br/>
+       </section>
+      </div>
     </main>
     <footer>
       <div id="footer_menu_container">
         <div class="footer_menu">
           <ul>
             <li><h3>We are Food On Wheels</h3></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="">Blogs</a></li>
           </ul>
         </div>
@@ -115,7 +139,5 @@
         <p>&copy; 2022 Food on wheels. All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="/js/payment.js"></script>
   </body>
- 
 </html>
