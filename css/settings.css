@@ -1,0 +1,62 @@
+.button {
+  display: flex;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: .5em;
+  font: 1.5em sans-serif;
+  color: #13ca75;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex : 1 1 500px;
+ /* justify-content: space-between;*/
+ /* padding: 20px 40px; */
+  width: 100%;
+ /* margin: 2em; */
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+section h3{
+  font-size: 100%;
+  color: rgb(158, 22, 22); 
+}
+Section h1{
+  color: #13ca75; 
+  font-size: 200%;
+}
+
+section h2{
+  color: #13ca75; 
+  font-size: 250%;
+}
+
+section p{
+  font-size: 15px;
+}
+.text-a {
+  padding-left:40px
+}
+label {
+color:#13ca75 ;
+width: 8em;
+font-weight: bold;}
+
+
+@media all and (min-width: 700px) {
+  .page-wrap{
+      flex: 3;
+  }
+}
+@media screen and (min-width: 500px) {
+
+  section {
+    flex: 1;
+  }
+}

@@ -8,6 +8,7 @@
     <!-- linking external stylesheet -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/about.css" />
+    <script src="../js/survey.js"></script>
     <!-- favicon of the page -->
     <link rel="icon" type="image/x-icon" href="../images/app_logo.jpeg" />
     <!-- to use the font awesome icons -->
@@ -31,7 +32,7 @@
             <a href="#"> <i class="fa fa-user"></i></a>
             <ul class="profile_dropdown dropdown">
               <li>
-                <a href="#">
+                <a href="favourites.html">
                   <i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites
                 </a>
               </li>
@@ -41,12 +42,12 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="payment.html">
                   <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
                 </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
+                <a href="settings.html"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
               </li>
               <li>
                 <a href="#">
@@ -82,7 +83,58 @@
             </div>
             <p><strong><u>Support 24/7:</u></strong><br>
                888-555-5555<br>
-            <a href="mailto:garima@wadhwa.com">support@foodonwheels.com</a></p>
+            <a href="mailto:garima@wadhwa.com">support@foodonwheels.com</a></p><br>
+            <h2>Participate in Survey</h2>
+            <div>
+              <ul id="vlidationMsgs"></ul>
+            </div>
+            <br>
+            <form action="confirm.html" method="get">
+              <div>
+                <label for="restaurant_address">Restaurant Name:</label>
+                <input type="text" name="restaurant_address" id="restaurant_address" />
+                <span>*</span>
+              </div>
+              <div>
+                <label for="count">Number of People dine-in:</label>
+                <input type="text" name="count" id="count" />
+                <span>*</span>
+              </div>
+              <div>
+                <label for="food">Food Dietary Type:</label>
+                <select name="food" id="food">
+                  <option value="">Select a Dietary type</option>
+                  <option>Vegetarian</option>
+                  <option>Non-Vegetarian</option>
+                  <option>Vegan</option>
+                  <option>Gluten-free</option>
+                </select>
+                <span>*</span>
+              </div>
+              <div>
+                <label>Booking Mode:</label>
+                <input
+                  type="radio"
+                  name="contact"
+                  id="text"
+                  value="text"
+                  checked
+                />Text
+                <input type="radio" name="contact" id="email" value="email" />Website
+                <input type="radio" name="contact" id="none" value="none" />Phone call
+              </div>
+              <div>
+                <label for="feedback">Feedback:</label><br>
+                <textarea rows="5" cols="30" name="feedback" id="feedback"></textarea>
+                <span>*</span>
+              </div>
+              <div>
+                <label>&nbsp;</label>
+                <input type="button" name="submit" id="submit" value="Submit" />
+                <input type="button" id="reset_form" value="Reset" />
+              </div>
+            </form>
+
         </aside>
           <!-- Food On Wheels description -->
         <section>
@@ -116,7 +168,7 @@
         <div class="footer_menu">
           <ul>
             <li><h3>We are Food On Wheels</h3></li>
-            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="">Blogs</a></li>
           </ul>
         </div>
@@ -125,7 +177,7 @@
             <li><h3>Get Help</h3></li>
             <li><a href="">How to Order?</a></li>
             <li><a href="">FAQs</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer_menu">

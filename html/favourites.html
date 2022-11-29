@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <!-- title of the page -->
-    <title>Food on wheels</title>
+    <title>Favourites</title>
     <!-- set the viewport of the page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- linking external stylesheet -->
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/favourites.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
     <!-- favicon of the page -->
     <link rel="icon" type="image/x-icon" href="../images/app_logo.jpeg" />
     <!-- to use the font awesome icons -->
@@ -30,7 +32,7 @@
             <a href="#"> <i class="fa fa-user"></i></a>
             <ul class="profile_dropdown dropdown">
               <li>
-                <a href="#">
+                <a href="favourites.html">
                   <i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites
                 </a>
               </li>
@@ -40,12 +42,12 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="payment.html">
                   <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
                 </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
+                <a href="settings.html"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
               </li>
               <li>
                 <a href="#">
@@ -64,13 +66,102 @@
     </header>
     <main>
       <!-- Add the code in here -->
+      <!-- Heading, image, address are Left alighned-->
+        <div class="page-wrap">
+        <aside>
+              <h1>We know you love it &hearts; &hearts; &hearts;!!!</h1>
+              <p>Browse your favourite restaurants & feast like never before.</p>
+              <br/>
+              <div class="product-class">
+              <img src="../images/Food_all.png" alt="Food item"  >
+              <img src="../images/Food.jpeg" alt="Food item" >
+              <br/><br/><br/><br/>
+              </div>
+        </aside>
+          <!-- Food On Wheels Favourites -->
+        <section>
+            <h2>Your Favourite Restaurants &#128525;...&#128071;</h2>
+            <div id="search">
+                <div id="search_logo">
+                  <i class="fa fa-search"></i>
+                </div>
+                <input placeholder="Search" />
+            </div>
+            <br>
+            <div class="horizontal_scroll_view">
+              <div class="restaurant_card">
+                <img class="restaurant_img" src="../images/tim-hortons.png" />
+                <div class="restaurant_brief">
+                  <p class="restaurant_title">Tim Hortons(Ossington)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
+                  <p class="fow_fee">$0.99 Delivery Fee(25-30min)</p>
+                  <p class="restaurant_rating">
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: black"></span>
+                  </p>
+                  <!-- Address -->
+                  <p class="restaurant_location">
+                    <i class="fa fa-map-marker"></i>&nbsp;
+                    12010 Humber Road<br/>
+                    Ossington<br/>
+                  </p>
+                  <p class="res_desc">Bakery.Cafe.Doughnuts &#127849;&#127850;&#127861;</p>
+                </div>
+              </div>
+              <div class="restaurant_card">
+                <img class="restaurant_img" src="../images/chinese_cusiene.png" />
+                <div class="restaurant_brief">
+                  <p class="restaurant_title">Westown Chineese Food(Junction)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
+                  <p class="fow_fee">$0.99 Delivery Fee(15-25min)</p>
+                  <p class="restaurant_rating">
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                  </p>
+                  <!-- Address -->
+                  <p class="restaurant_location">
+                    <i class="fa fa-map-marker"></i>&nbsp;
+                    1266 Bloor St West<br/>
+                    Toronto<br/>
+                  </p>
+                  <p class="res_desc">Asian.Chinese.Noodles &#127836; &#127844;</p>
+                </div>
+              </div>
+              <div class="restaurant_card">
+                <img class="restaurant_img" src="../images/indian_cusiene.png" />
+                <div class="restaurant_brief">
+                  <p class="restaurant_title">Mumbaikar Indian Restaurant and Bar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
+                  <p class="fow_fee">$1.99 Delivery Fee(25-30min)</p>
+                  <p class="restaurant_rating">
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: black"></span>
+                  </p>
+                  <!-- Address -->
+                  <p class="restaurant_location">
+                    <i class="fa fa-map-marker"></i>&nbsp;
+                    1063 Bloor St West<br/>
+                    Toronto<br/>
+                  </p>
+                  <p class="res_desc">Indian.Non-Vegetarian.Alcohol &#127831; &#127867;</p>
+                </div>
+              </div>
+            </div>
+       </section>
+      </div>
     </main>
     <footer>
       <div id="footer_menu_container">
         <div class="footer_menu">
           <ul>
             <li><h3>We are Food On Wheels</h3></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="">Blogs</a></li>
           </ul>
         </div>
