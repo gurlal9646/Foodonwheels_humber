@@ -1,0 +1,75 @@
+main h2 {
+  padding: 0px 0px 16px;
+}
+
+.order_section {
+  padding: 8px 0px;
+  max-width: 500px;
+}
+
+.order_item_list {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 0px;
+}
+
+.order_row,
+.order_item_row {
+  display: grid;
+  padding: 8px;
+  gap: 4px;
+}
+
+#order_number,
+#guest_addr,
+#payment_mthd,
+.order_item_name {
+  font-weight: bold;
+}
+
+#guest_addr_label,
+#payment_mthd_label,
+#order_date,
+.order_item_qty {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#order_date,
+.order_item_qty {
+  grid-column-start: 1;
+}
+
+#order_status,
+._price,
+.order_item_price,
+#paid_price {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  text-align: right;
+  padding: 0px 4px;
+}
+
+#order_status {
+  color: green;
+  font-weight: bold;
+}
+
+.order_item_qty {
+  font-size: 0.9em;
+}
+
+.currency {
+  color: brown;
+  padding: 0px 2px;
+}
+
+#paid_price,
+#paid_price_label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.order_again_btn {
+  padding: 10px;
+  margin: 30px 8px;
+}
