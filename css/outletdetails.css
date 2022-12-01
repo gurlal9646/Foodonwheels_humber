@@ -1,0 +1,86 @@
+.item-content .card-title {
+    cursor: pointer;
+  }
+
+.item-content .card-title {
+    font-size: 1.1rem;
+  }
+
+.card-body {
+    padding: 0 0.6rem;
+  }
+
+.foodItemHr {
+    border-top: 0.5px solid #efb473;
+    width: 90%;
+    margin: 5px auto;
+  }
+
+.foodItemName {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 3px;
+}
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.text-muted-small {
+    color: #434b52;
+    margin-bottom: 3px;
+    font-size: 0.85rem;
+  }
+
+.card {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 1rem 5rem 1rem;
+    background-color: #ffe6cc;
+    position: relative;
+    border: none;
+}
+.vegIcon {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+.nonVegIcon {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+.addCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.quantity {
+    background-color: snow;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 22px;
+    width: 22px;
+    margin: auto 8px;
+    padding: 5px;
+}
+
+.menuBtn {
+    font-size: 0.75rem;
+}
