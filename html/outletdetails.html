@@ -25,12 +25,14 @@
     />
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <header>
       <img id="app_logo" src="../images/app_logo.jpeg" />
       <nav id="menu_bar">
         <ul>
-          <li>
-            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+          <li class="shoppingCart" id="myModal">
+            <i class="fa fa-shopping-bag"></i>
+            <span class="shoppingCartAfter">0</span>
           </li>
           <li>
             <a href="#"><i class="fa fa-bell"></i></a>
@@ -246,6 +248,17 @@
           </div>
         </div>
         </div>
+
+        <!-- The Modal -->
+   <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+     <p>Some text in the Modal..</p>
+  </div>
+
+</div>
     </main>
     <footer>
       <div id="footer_menu_container">
@@ -294,5 +307,6 @@
         <p>&copy; 2022 Food on wheels. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="../js/outletdetails.js"></script>
   </body>
 </html>

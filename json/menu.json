@@ -1,0 +1,40 @@
+{"menu": {
+    "items": [
+        {
+            "name":"coke",
+            "price": 20,
+            "category":"drinks",
+            "sizes":["small","large"]
+        },
+        {
+            "name":"pepsi",
+            "price": 40,
+            "category":"drinks",
+            "sizes":["small","large"]
+        },
+        {
+            "name":"water",
+            "price": 50,
+            "category":"drinks",
+            "sizes":["small","large"]
+        },
+        {
+            "name":"hamburger",
+            "price": 10,
+            "category":"junk food",
+            "sizes":["small","large"]
+        },
+        {
+            "name":"fries",
+            "price": 5,
+            "category":"junk food",
+            "sizes":["small","large"]
+        },
+        {
+            "name":"pizza",
+            "price": 35,
+            "category":"junk food",
+            "sizes":["small","large"]
+        }
+    ]
+}}
