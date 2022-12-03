@@ -1,0 +1,58 @@
+{
+    "outletmenus":[
+        {
+            "outletid":1,
+            "outletmenu":{              
+                "menucategories":[
+                    {
+                         "categoryname":"Steamed Momos",
+                         "items":[
+                            {
+                             "item_name":"Veggie Momo",
+                             "price":80
+                            },
+                            {
+                                "item_name":"Paneer Momo",
+                                "price":40
+                            },
+                            {
+                                "item_name":"tandori Momo",
+                                "price":40
+                            },
+                            {
+                                "item_name":"Paneer Momo",
+                                "price":40
+                            }
+                            
+                         ]
+                    },
+                    {
+                        "categoryname":"Fried Momos",
+                        "items":[
+                           {
+                            "item_name":"Veggie Fried Momo",
+                            "price":80
+                           },
+                           {
+                               "item_name":"Paneer Fried Momo",
+                               "price":20
+                           },
+                           {
+                               "item_name":" Mushroom Fried Momo",
+                               "price":60
+                           },
+                           {
+                               "item_name":"Corn Cheese Fried Momo",
+                               "price":70
+                           }
+                           
+                        ]
+                   }
+
+                ]                            
+           }
+
+        }
+        
+    ]
+}
