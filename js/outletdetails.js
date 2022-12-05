@@ -1,12 +1,18 @@
 let food = [];
 let totalAmount = 0;
 
+
+
 $(document).ready(function () {
 
+  let queryparams = getQueryParams(window.location.href);
+  let outletid = queryparams.outletid;
+
   $.getJSON('/json/outletmenu.json', function(jd) {
-    let response = jd;
-    if(response!=undefined && typeof(response) == 'object'){
-      let outletmenus = response.outletmenus;     
+    let outlet = jd.outletmenus.filter(x=>x.outletid == outletid);
+    console.log(outlet);
+    if(outlet!=undefined && typeof(outlet) == 'object'){
+      let outletmenus = outlet;     
        if(outletmenus.length > 0){
         let dis='';
         for(let outlet of outletmenus){
@@ -240,4 +246,14 @@ function ToCart(foodNameClicked, foodQuantity, isVeg, singleFoodAmount) {
       '<i class="fas fa-rupee-sign"></i> ' +
       totalAmount
   );
+}
+
+function getQueryParams(url) {
+  const paramArr = url.slice(url.indexOf('?') + 1).split('&');
+  const params = {};
+  paramArr.map(param => {
+      const [key, val] = param.split('=');
+      params[key] = decodeURIComponent(val);
+  })
+  return params;
 }
