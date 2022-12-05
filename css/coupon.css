@@ -1,0 +1,30 @@
+.body
+{
+    font-family: Arial;
+}
+.coupon
+{
+    border: 5px solid #4a9e73;
+    width: 50%;
+    float: left;
+    border-radius: 15px;
+    max-width: 276px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*.container
+{
+  width: 60%; 
+}*/
+.promo
+{
+    background-color: #92dc9b;
+    padding: 5px;
+    color: white;
+
+}
+.expire
+{
+    color: red;
+}

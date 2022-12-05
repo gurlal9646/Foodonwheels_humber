@@ -1,80 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- title of the page -->
+    <title>Food on wheels</title>
+    <!-- set the viewport of the page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ</title>
+    <!-- linking external stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/FAQs.css" />
+    <!-- favicon of the page -->
+    <link rel="icon" type="image/x-icon" href="../images/app_logo.jpeg" />
+    <!-- to use the font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <h2>Frequently Asked Questions</h2>
-      <div class="accordion">
-        <div class="accordion-item">
-          <button id="accordionbutton1" aria-expanded="false">
-            <span class="accordion-title">What is Food on wheels Customer Care Number?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              We value our customer’s time and hence moved away from a single customer care number to a comprehensive chat-based 
-              support system for quick and easy resolution. You no longer have to go through the maze of an call support. 
-              Just search for your issue in the help section on this page and initiate a chat with us. You can also email us your issue on
-               support@foodonwheels.ca
-            </p>
+    <header>
+      <img id="app_logo" src="../images/app_logo.jpeg" />
+      <nav id="menu_bar">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-bell"></i></a>
+          </li>
+          <li id="profile">
+            <a href="#"> <i class="fa fa-user"></i></a>
+            <ul class="profile_dropdown dropdown">
+              <li>
+                <a href="#">
+                  <i class="fa fa-heart"></i>&nbsp;&nbsp;Favourites
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-list-alt"></i>&nbsp;&nbsp;My Orders History
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
+                </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-cog"></i>&nbsp;&nbsp;Settings </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-key"></i>&nbsp;&nbsp;Change password
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">What is Food on wheels Customer Care Number?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We value our customer’s time and hence moved away from a single customer care number to a comprehensive chat-based 
+                support system for quick and easy resolution. You no longer have to go through the maze of an call support. 
+                Just search for your issue in the help section on this page and initiate a chat with us. A customer care executive
+                 will be assigned to you shortly. You can also email us your issue on support@foodonwheels.ca
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordionbutton2" aria-expanded="false">
-            <span class="accordion-title">Can I edit my order?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Your order can be edited before it reaches the restaurant. You could contact customer support team via chat
-               or call to do so. Once order is placed and restaurant starts preparing your food, you may not edit its contents
-            </p>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Can I edit my order?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Your order can be edited before it reaches the restaurant. You could contact customer support team via chat
+                 or call to do so. Once order is placed and restaurant starts preparing your food, you may not edit its contents
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordionbutton3" aria-expanded="false">
-            <span class="accordion-title">I want to cancel my order.</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              We will do our best to accommodate your request if the order is not placed to the restaurant
-               (Customer service number:  6479046115). Please note that we will have a right to charge a cancellation fee up to
-                full order value to compensate our restaurant and delivery partners if your order has been confirmed.
-            </p>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">I want to cancel my order.</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We will do our best to accommodate your request if the order is not placed to the restaurant
+                 (Customer service number:  6479046115). Please note that we will have a right to charge a cancellation fee up to
+                  full order value to compensate our restaurant and delivery partners if your order has been confirmed.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordionbutton4" aria-expanded="false">
-            <span class="accordion-title">Will Swiggy be accountable for quality/quantity?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Quantity and quality of the food is the restaurants' responsibility. However in case of issues with the quality or 
-              quantity, kindly submit your feedback and we will pass it on to the restaurant.
-            </p>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title">Will Foodonwheels be accountable for quality/quantity?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Quantity and quality of the food is the restaurants' responsibility. However in case of issues with the quality or 
+                quantity, kindly submit your feedback and we will pass it on to the restaurant.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordionbutton5" aria-expanded="false">
-            <span class="accordion-title">Is there a minimum order value?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              We have no minimum order value and you can order for any amount.
-            </p>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title">Is there a minimum order value?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We have no minimum order value and you can order for any amount.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <script src="../js/FAQs.js"></script>
+      <script src="../js/FAQs.js"></script>
+    </main>
+    <footer>
+      <div id="footer_menu_container">
+        <div class="footer_menu">
+          <ul>
+            <li><h3>We are Food On Wheels</h3></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="footer_menu">
+          <ul>
+            <li><h3>Get Help</h3></li>
+            <li><a href="">How to Order?</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer_menu">
+          <ul>
+            <li><h3>Call Us</h3></li>
+            <li class="link">Toronto: +16783451298, +16934812468</li>
+          </ul>
+          <ul id="social_links_container">
+            <li><h3>Connect With Us</h3></li>
+            <li class="social_links">
+              <a id="facebook" href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="social_links">
+              <a id="twitter" href=""><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="social_links">
+              <a id="google" href=""><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li class="social_links">
+              <a id="youtube" href=""><i class="fa fa-youtube"></i></a>
+            </li>
+            <li class="social_links">
+              <a id="linkedin" href=""><i class="fa fa-linkedin-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyrights">
+        <p><a href="">Terms Of Usage</a> | <a href="">Privacy Policy</a></p>
+        <p>&copy; 2022 Food on wheels. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
