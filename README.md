@@ -38,5 +38,6 @@ Support Contact, FAQs, Coupons/
 -	Coupons:- Offering discounts to boost the business.
 -	About:- Will provide information to visitors about what do the company do.
 -	Favorites:- Will help user to save information abut their favorite food items and outlets.
--	Settings: Update your profile, Change password, Delete account
+-	Settings: Update your profile details, Delete account and choose your notification Prefrences.Used JavaScript for form validation
+        of user-inputs and to hide or display data based on the mouse click via toggle function.Used media-querries for making the page responsive.
 
