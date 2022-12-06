@@ -38,7 +38,7 @@ const processEntries = () => {
   // submit the form or notify user of errors
   if (msgs.length == 0) {
     // no error messages
-    $('form').submit();
+    alert('Survey Successfully stored');
   } else {
     displayErrorMsgs1(msgs);
   }
