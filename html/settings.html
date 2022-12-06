@@ -41,7 +41,7 @@
                 </a>
               </li>
               <li>
-                <a href="payment.html">
+                <a href="#">
                   <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
                 </a>
               </li>
@@ -67,37 +67,128 @@
       <!-- Add the code in here -->
       <div class="page-wrap">
             <!-- Food On Wheels Settings page -->
-            <section>
+            <section id="settingss">
             <!-- Link to webpage -->
             <h3><a href="dashboard.html">Home</a>&nbsp;&nbsp;</h3>
             <br/>
-            <h2>Settings</h2>
+            <h3>Settings</h3>
             <p><u>v1.0.0</u></p>
             <br/><br/>
-            <a class="button" href="settings_AccInfo.html">Edit Account information</a>
-            <p>Change your name, description and profile photo.</p>
+            <h2><a class="button" href="#">Edit Account information</a></h2>
+            <div>
+              <h3>How do I update my account information?</h3>
+              <p>
+                  You can update your name, email, phone number, and profile picture in your app:
+              </p>
+              <br/>
+              <ol class = "text-a">
+                  <li>Tap “Account” on top right of the screen.</li>
+                  <li>Tap your profile icon then “Settings”.</li>
+                  <li>Tap the detail you want to change and enter the updated information.</li>
+                  <li>You’ll be prompted to enter a verification code or current password to confirm your change via the confirmation 
+                    e-mail sent on the registered & new Email ID.
+                  </li>
+              </ol>
+              <br/><br/>
+              <form method="get" id="form1">
+                <label for="name_s">Name:</label>
+                <input type="text" id="name_s" name="name_s" required/>
+                <span>*</span>
+                <br>
+                <label for="email_address">Email: </label>
+                <input type="text" id="email_address" name="email_address" required />
+                <span>*</span>
+                <br>
+                <label for="phone">Contact: </label>
+                <input type="text" id="phone" name="phone" required/>
+                <span>*</span>
+                <br>
+                <label for="Gender">Gender: </label>
+                <input type="radio" id="m" name="gender" value="m" checked /> Male
+                <input type="radio" id="f" name="gender" value="f" /> Female
+                <input type="radio" id="o" name="gender" value="o" /> Other 
+                <br />
+                <label for="Language">Language: </label>
+                <input type="checkbox" id="Eg" name="lang" value="html" checked /> English
+                <input type="checkbox" id="Fr" name="lang" value="css" /> French
+                <input type="checkbox" id="Pj" name="lang" value="js" /> Punjabi <br />
+                <label for="Country">Country: </label>
+                <select name="country" id="country">
+                  <option value="" selected></option>
+                  <option value="ca">Canada</option>
+                  <option value="us">USA</option>
+                  <option value="mx">Mexico</option>
+                </select>
+                <span>*</span>
+                <br />
+                <label for="Date">Birthday: </label>
+                <input type="date" id="dt" name="date" />
+                <span>*</span>
+                <br />
+                <input type="button" id="choice" value="Update Profile" name="btnSubmit" />
+              </form>  
+            </div>
             <br/>
-            <a class="button" href="settings_AccSettng.html">Account Settings</a>
-            <p>Change your email or delete your account.</p>
+            <h2><a class="button" href="#">Account Settings.....</a></h2>
+            <div>
+            <h1>Delete Account</h1>
+            <h3>Why would you like to delete your account? &#9785; &#9785;</h3>
             <br/>
-            <a class="button" href="abc.html">Notification Settings</a>
-            <p>Define what emails and notifications you want to see.</p>
+            <form method="get" id="form2">
+              <label for="reason" id="rss">Choose One: </label><br />
+              <input type="radio" id="res-1" name="reason"  /> I don't want to use "Food On Wheels" anymore <br />
+              <input type="radio" id="res-2" name="reason"  /> I am using another account <br />
+              <input type="radio" id="res-3" name="reason"  /> I am worried about my privacy <br />
+              <input type="radio" id="res-4" name="reason"  /> You are sending me too many notifications <br />
+              <input type="radio" id="res-5" name="reason" /> Other
+              <span>*</span>
+              <br /><br />
+              <label for="Feedback" id="fdd">Feedback: </label>
+              <br />
+              <textarea cols="40" rows="5" name="feedback" id="feedback"></textarea> 
+              <span>*</span>
+              <br />
+              <input type="button" id="choice_s" value="Delete my account now !!! " name="btnSubmit_s" />
+            </form>
+            </div>
             <br/>
-            <a class="button" href="abc.html">Add a place</a>
-            <p>In case we are missing something.</p>
-            <br/>
-            <a class="button" href="abc.html">Update saved addresses</a>
-            <p>Save addresses on your account so you can quickly select where you’d like your order delivered</p>
-            <br/>
+            <h2><a class="button" href="#">Notification Settings.....</a></h2>
+            <div>
+              <h1>Notification Preferences &#129331;</h1>
+              <br/>
+              <h3>Receive notifications to stay up-to date with whats brewing in food industry</h3>
+              <br/><br/>
+              <form method="get">
+                <label for="Enable all" class="text-np">Enable all:</label>
+                <input type="checkbox" id="not-1" name="notpref" value="1" /><br />
+                <p>Activate all notifications</p><br />
+                <label for="Promos" class="text-np">Promos and offers</label><br />
+                <p>Receive updates about coupons,promotions and money-saving offers </p>
+                <label for="Mail" class="text-np">&#128232; E-mail</label>
+                <input type="checkbox" id="not-2" name="notpref" value="2" /> <br />
+                <label for="Mail" class="text-nps">&#128276; Push</label>
+                <input type="checkbox" id="not-3" name="notpref" value="3" /> <br />
+                <label for="text-msg" class="text-npsf">&#9990; WhatsApp</label>
+                <input type="checkbox" id="not-4" name="notpref" value="4" /> 
+                <span>*</span>
+                <br /><br>
+                <h3>Any Feedback: </h3>
+                <textarea cols="40" rows="5" name="feedback" id="feedback_np"></textarea> 
+                <span>*</span>
+                <br />
+                <input type="button" id="choice_np" value="Submit !!! " name="btnSubmit_np" />
+              </form> 
+            </div>
        </section>
       </div>
     </main>
+    <script src="../js/settings.js"></script>
     <footer>
       <div id="footer_menu_container">
         <div class="footer_menu">
           <ul>
             <li><h3>We are Food On Wheels</h3></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
             <li><a href="">Blogs</a></li>
           </ul>
         </div>

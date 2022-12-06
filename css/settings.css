@@ -23,31 +23,126 @@ section {
   padding: 10px 10px;
 }
 
-section h3{
-  font-size: 100%;
-  color: rgb(158, 22, 22); 
-}
+
 Section h1{
-  color: #13ca75; 
-  font-size: 200%;
+  color: #9f13ca; 
+  font-size: 160%;
+  padding-left: 25px;
 }
 
 section h2{
-  color: #13ca75; 
-  font-size: 250%;
+  color: black; 
+  font-size: 90%;
+  padding: 0.25em 0 0.25em 25px;
+  cursor: pointer;
+  background: url(../images/plus.png) no-repeat left center;
+}
+section h2.minus {
+  background: url(../images/minus.png) no-repeat left center;
+}
+
+section a:hover {
+  color: blue;
+}
+
+#settingss div {
+  display: none;
+}
+
+#settingss div.open {
+  display: block;
 }
 
 section p{
   font-size: 15px;
+  padding-bottom: 0.25em;
+  padding-left: 25px;
 }
+section h3{
+  font-size: 100%;
+  color: rgb(158, 22, 22);
+  padding-bottom: 0.25em;
+  padding-left: 25px;
+}
+
 .text-a {
   padding-left:40px
 }
 label {
 color:#13ca75 ;
 width: 8em;
-font-weight: bold;}
+font-weight: bold;
+padding-left: 25px;
+float: left;
+text-align: right; 
+}
 
+input {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+select {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+span {
+  color: red;
+}
+#choice {
+  margin-top: .5em;
+  margin-left: 12.95em;
+}
+
+#feedback {
+  margin-left: 2.5em;
+}
+
+#choice_s {
+  margin-left: 2.5em;
+}
+
+#fdd{
+  
+  margin-left: -1.5em;
+}
+#rss{
+  margin-left: -1.0em;
+}
+
+.text-np{
+color:#13ca75 ;
+width: auto;
+font-weight: bold;
+padding-left: 0px;
+font-size: 100%;
+margin-left: 1.5em;
+}
+
+.text-nps{
+  color:#13ca75 ;
+width: auto;
+font-weight: bold;
+padding-left: 0px;
+font-size: 100%;
+margin-left: -4.5em;
+}
+
+.text-npsf{
+  color:#13ca75 ;
+width: auto;
+font-weight: bold;
+padding-left: 0px;
+font-size: 100%;
+margin-left: 1.5em;
+}
+
+#feedback_np {
+  margin-left: 1.5em;
+}
+
+#choice_np {
+  margin-left: 1.25em;
+}
 
 @media all and (min-width: 700px) {
   .page-wrap{
