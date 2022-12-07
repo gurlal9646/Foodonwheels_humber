@@ -14,21 +14,21 @@ function seterror(id, error){
 }
 
 function validateForm(){
-    var returnval = true;
+    let returnval = true;
     clearErrors();
 
     //perform validation and if validation fails, set the value of returnval to false
     
 
-    var email = document.forms['myForm']["femail"].value;
+    let email = document.forms['myForm']["femail"].value;
     if (email.length==0){
         seterror("email", "*Email is required!");
         returnval = false;
     }
 
-    var phone = document.forms['myForm']["fphone"].value;
+    let phone = document.forms['myForm']["fphone"].value;
     if (phone.length != 10){
-        seterror("phone", "*Phone number should be of 10 digits!");
+        seterror("phone", "*Phone number is required!");
         returnval = false;
     }
 
