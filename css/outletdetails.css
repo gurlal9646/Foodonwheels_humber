@@ -88,9 +88,7 @@
   padding-top: 5px;
   font-size: 1.4rem;
   color: snow;
-  position: absolute;
-  right: 4rem;
-  top: 1rem;
+  position: relative;
 }
 
 .shoppingCart i {
@@ -117,21 +115,23 @@
 }
 
 .modal-content {
-  background-color: #ffe6cc;
+  background-color: #bff7af;
+  border-radius: 10px;
+}
+.modal-dialog{
+  max-width: 500px;
+    margin: 1.75rem auto;
+    width: 500px;
 }
 
 
-
-
-
-/************************ SHOPPING CART CSS ********************/
 
 .modal-body {
   padding: 0;
 }
 
 .modal-body .container-fluid {
-  padding: 5px;
+  padding: 10px;
 }
 
 .paymentInfo {
@@ -151,7 +151,9 @@
 .cartContentDiv {
   padding: 10px 0 10px 0;
 }
-
+.cartContentRow{
+  justify-content: space-between;
+}
 .cartContentRow .col-2 {
   display: flex;
   flex-direction: column;
@@ -185,13 +187,6 @@
   margin: 5px auto;
 }
 
-/* Section for total amount on Cart */
-.totalAmountDiv {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  padding-left: 15px;
-}
 
 .totalAmountText {
   font-size: 0.9rem;
@@ -244,4 +239,15 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+}
+.modal-footer{
+  padding: 10px;
+}
+
+.form-control{
+  width: 100%;
+}
+
+.totalAmountDiv{
+font-weight: bold;
 }

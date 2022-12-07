@@ -243,7 +243,7 @@ function ToCart(foodNameClicked, foodQuantity, isVeg, singleFoodAmount) {
   $(".totalAmountDiv").empty();
   $(".totalAmountDiv").append(
     '<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' +
-      '<i class="fas fa-rupee-sign"></i> ' +
+      '<i class="fa fa-dollar"></i> ' +
       totalAmount
   );
 }
