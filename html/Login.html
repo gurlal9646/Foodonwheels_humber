@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/payment.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/login.css" />
     <link
       rel="stylesheet"
@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <div class="center">
       <h1>Login</h1>
-      <form method="post">
+      <form name="loginForm" >
         <div class="txt_field">
           <input type="text" id="username" required>
           <span></span>
@@ -28,12 +28,12 @@
           <label>Password</label>
         </div>
         <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login" id="loginbtn">
+        <input type="button" value="Login" id="loginbtn" onclick="validate()">
         <div class="signup_link">
-          Not a member? <a href="#">Signup</a>
+          Not a member? <a href="Signup.html">Signup</a>
         </div>
       </form>
     </div>
-<script src="../js/Login.js"></script>
+   <script src="../js/Login.js"></script>
   </body>
 </html>
