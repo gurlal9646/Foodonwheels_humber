@@ -1,7 +1,7 @@
 let credentialList = [];
 $(document).ready(()=>{
   
-    $.getJSON('/json/logincredentials.json', function(jd) {
+    $.getJSON('../json/logincredentials.json', function(jd) {
     let response = jd;
     if(response != null){
         credentialList = response.credentials;
