@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -42,7 +43,7 @@
                 </a>
               </li>
               <li>
-                <a href="payment.html">
+                <a href="#">
                   <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
                 </a>
               </li>
@@ -67,8 +68,10 @@
     <main>
       <!-- Add the code in here -->
       <!-- Heading, image, address are Left alighned-->
+
         <div class="page-wrap">
         <aside>
+          <div id="team"></div>
               <h1>We know you love it &hearts; &hearts; &hearts;!!!</h1>
               <p>Browse your favourite restaurants & feast like never before.</p>
               <br/>
@@ -88,70 +91,8 @@
                 <input placeholder="Search" />
             </div>
             <br>
-            <div class="horizontal_scroll_view">
-              <div class="restaurant_card">
-                <img class="restaurant_img" src="../images/tim-hortons.png" />
-                <div class="restaurant_brief">
-                  <p class="restaurant_title">Tim Hortons(Ossington)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
-                  <p class="fow_fee">$0.99 Delivery Fee(25-30min)</p>
-                  <p class="restaurant_rating">
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: black"></span>
-                  </p>
-                  <!-- Address -->
-                  <p class="restaurant_location">
-                    <i class="fa fa-map-marker"></i>&nbsp;
-                    12010 Humber Road<br/>
-                    Ossington<br/>
-                  </p>
-                  <p class="res_desc">Bakery.Cafe.Doughnuts &#127849;&#127850;&#127861;</p>
-                </div>
-              </div>
-              <div class="restaurant_card">
-                <img class="restaurant_img" src="../images/chinese_cusiene.png" />
-                <div class="restaurant_brief">
-                  <p class="restaurant_title">Westown Chineese Food(Junction)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
-                  <p class="fow_fee">$0.99 Delivery Fee(15-25min)</p>
-                  <p class="restaurant_rating">
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                  </p>
-                  <!-- Address -->
-                  <p class="restaurant_location">
-                    <i class="fa fa-map-marker"></i>&nbsp;
-                    1266 Bloor St West<br/>
-                    Toronto<br/>
-                  </p>
-                  <p class="res_desc">Asian.Chinese.Noodles &#127836; &#127844;</p>
-                </div>
-              </div>
-              <div class="restaurant_card">
-                <img class="restaurant_img" src="../images/indian_cusiene.png" />
-                <div class="restaurant_brief">
-                  <p class="restaurant_title">Mumbaikar Indian Restaurant and Bar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
-                  <p class="fow_fee">$1.99 Delivery Fee(25-30min)</p>
-                  <p class="restaurant_rating">
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: black"></span>
-                  </p>
-                  <!-- Address -->
-                  <p class="restaurant_location">
-                    <i class="fa fa-map-marker"></i>&nbsp;
-                    1063 Bloor St West<br/>
-                    Toronto<br/>
-                  </p>
-                  <p class="res_desc">Indian.Non-Vegetarian.Alcohol &#127831; &#127867;</p>
-                </div>
-              </div>
+            <div class="horizontal_scroll_view" id="pdiv">
+  
             </div>
        </section>
       </div>
@@ -170,7 +111,7 @@
             <li><h3>Get Help</h3></li>
             <li><a href="">How to Order?</a></li>
             <li><a href="">FAQs</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer_menu">
@@ -203,5 +144,37 @@
         <p>&copy; 2022 Food on wheels. All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+      $().ready(function () {
+        $.getJSON('../json/outlet.json', function (data) {
+          console.log(data);
+        let dis='';
+        for(let i of data.outlets){
+          dis += `<div class="restaurant_card">
+                <img class="restaurant_img" src="${i.image}" />
+                <div class="restaurant_brief">
+                  <p class="restaurant_title">${i.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
+                  <p class="fow_fee">${i.dfee}</p>
+                  <p class="restaurant_rating">
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                    <span class="fa fa-star" style="color: coral"></span>
+                  </p>
+                  <!-- Address -->
+                  <p class="restaurant_location">
+                    <i class="fa fa-map-marker"></i>&nbsp;
+                    ${i.address}<br/>
+                  </p>
+                  <p class="res_desc">${i.food} &#127836; &#127844;</p>
+                </div>
+              </div>`;
+        }
+          document.getElementById('pdiv').innerHTML = dis;
+        
+        });
+      });
+    </script>
   </body>
 </html>
