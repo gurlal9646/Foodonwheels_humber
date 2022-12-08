@@ -5,13 +5,13 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
-body{
+  /*body{
 	height: 100vh;
 	width: 100%;
-}
+}   */
 
 .container{
-	position: relative;
+	/*position: relative;               */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -41,14 +41,14 @@ body{
 }
 
 h2{
-	position: relative;
+	/*position: relative; */
 	padding: 0 0 10px;
 	margin-bottom: 10px;
 }
 
 h2:after{
 	content: '';
-    position: absolute;
+    /*position: absolute;    */
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);

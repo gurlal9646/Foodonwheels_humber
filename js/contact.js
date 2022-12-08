@@ -26,11 +26,32 @@ function validateForm(){
         returnval = false;
     }
 
+
     let phone = document.forms['myForm']["fphone"].value;
-    if (phone.length != 10){
-        seterror("phone", "*Phone number is required!");
+    if (phone.length == 0){
+        seterror("phone", "*Enter the phone number!");
         returnval = false;
     }
+    else if (phone.length < 10){
+        seterror("phone", "*Enter the phone number with atleast 10 digits!");
+        returnval = false;
+    }
+    
+
+
+    let name = document.forms['myForm']["fname"].value;
+    if (name.length == 0){
+        seterror("name", "*Name is required!");
+        returnval = false;
+    }
+
+    let message = document.forms['myForm']["fmessage"].value;
+    if (message.length == 0){
+        seterror("message", "*Message is required!");
+        returnval = false;
+    }
+
+
 
 if(returnval== true)
 {
