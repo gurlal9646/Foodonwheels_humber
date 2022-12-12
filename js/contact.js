@@ -45,6 +45,8 @@ function validateForm(){
         returnval = false;
     }
 
+    
+
     let message = document.forms['myForm']["fmessage"].value;
     if (message.length == 0){
         seterror("message", "*Message is required!");
@@ -56,8 +58,11 @@ function validateForm(){
 if(returnval== true)
 {
     alert("Message send successfully");
-}
+    const utr = new SpeechSynthesisUtterance('Message send successfully');
+    utr.pitch = 2;
+    window.speechSynthesis.speak(utr);
 
-    return returnval;
     
+} 
+return returnval; 
 }
