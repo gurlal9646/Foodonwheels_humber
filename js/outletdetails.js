@@ -1,5 +1,7 @@
 let food = [];
+let availableCoupons=[];
 let totalAmount = 0;
+let totalDiscount = 0;
 
 
 
@@ -7,10 +9,13 @@ $(document).ready(function () {
 
   let queryparams = getQueryParams(window.location.href);
   let outletid = queryparams.outletid;
+  $.getJSON('/json/coupon.json', function(response) {
+    availableCoupons = response.coupon;
+    console.log(availableCoupons);
+  });
 
   $.getJSON('/json/outletmenu.json', function(jd) {
     let outlet = jd.outletmenus.filter(x=>x.outletid == outletid);
-    console.log(outlet);
     if(outlet!=undefined && typeof(outlet) == 'object'){
       let outletmenus = outlet;     
        if(outletmenus.length > 0){
@@ -256,4 +261,53 @@ function getQueryParams(url) {
       params[key] = decodeURIComponent(val);
   })
   return params;
+}
+
+
+function validateCoupon(){
+  let coupon = $('#coupon')[0].value;
+  if(coupon == ''){
+    alert("Please Enter Promocode");
+    return;
+  }
+  let isValidCoupon = false;
+
+  for(let c of availableCoupons){
+     if(c.promo.toLowerCase() == coupon.toLowerCase()){
+      isValidCoupon = true;
+      let discount = 0;
+      if(c.couponType == 1){
+        discount += (c.couponDiscount/100) * totalAmount;
+      }
+      else{
+        discount += c.couponDiscount;
+      }
+      totalDiscount = discount;
+      totalAmount-=totalDiscount;
+      $('#coupon')[0].value ='';
+      break;
+     }
+
+  }
+
+  if(isValidCoupon){
+    $(".totalAmountDiv").empty();
+    $(".totalAmountDiv").append(
+      '<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' +
+        '<i class="fa fa-dollar"></i> ' +
+        totalAmount
+    );
+  
+    $("#discountdiv").empty();
+    $("#discountdiv").append(
+      `<span style="color:red">TOTAL DISCOUNT : </span><br/>
+        (-<i class="fa fa-dollar"></i> 
+        ${totalDiscount})`
+    );
+  }
+  else{
+    alert("Please Enter Valid Promocode");
+    return;
+  }
+
 }

@@ -46,6 +46,11 @@
                 </a>
               </li>
               <li>
+                <a href="../html/coupon.html">
+                  <i class="fa fa-usd" ></i>&nbsp;&nbsp;My Coupon
+                </a>
+              </li>
+              <li>
                 <a href="#">
                   <i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;My Cards
                 </a>
@@ -100,6 +105,15 @@
 
             <div class="userInfoDiv">
               <div class="mb-3 px-2">
+                <label for="address">Apply Coupon </label> <br />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="coupon"
+                  placeholder="Enter promo code"
+                />
+              </div>
+              <div class="mb-3 px-2">
                 <label for="address">Address *</label> <br />
                 <textarea
                   type="text"
@@ -119,13 +133,17 @@
           </div>
         </div>
         <div class="modal-footer">
-          <div class="totalAmountDiv"></div>
+          <div id="discountdiv"></div>
+          <div class="totalAmountDiv"></div>         
           <button
             type="button"
             class="btn-secondary"
             onclick="location.reload()">
             Clear Cart
           </button>
+          <a class="btn" style="margin-right: 5px;background-color: red;" onclick="validateCoupon()">
+            Apply Coupon
+          </a>
           <a class="btn" onclick="openWhatsapp()">
             Order Now
           </a>
