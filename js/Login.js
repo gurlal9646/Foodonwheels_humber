@@ -1,3 +1,7 @@
+ClearLocalStorage();
+function ClearLocalStorage(){
+    localStorage.clear();
+}
 let credentialList = [];
 $(document).ready(()=>{
   
