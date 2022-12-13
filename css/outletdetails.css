@@ -244,10 +244,8 @@
   padding: 10px;
 }
 
-.form-control{
-  width: 100%;
-}
-
-.totalAmountDiv{
+.totalAmountDiv
+{
 font-weight: bold;
 }
+
