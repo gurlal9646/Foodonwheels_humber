@@ -1,18 +1,18 @@
 {
-    "coupon":[
+    "coupons":[
         {
             "couponId":1,
-            "title":"BLACK FRIDAY 50% OFF",
-            "promo":"BF50",
+            "title":"50% off on purchase above $100",
+            "promo":"FLAT50",
             "couponType":1,
             "couponDiscount": 50
         },
 
         {
             "couponId":2,
-            "title":"BLACK FRIDAY 30$ OFF",
-            "promo":"BF30",
-            "couponType":2,
+            "title":"BOXING DAY 30% OFF",
+            "promo":"BD30",
+            "couponType":1,
             "couponDiscount": 30
         },
 
@@ -26,27 +26,19 @@
 
         {
             "couponId":4,
-            "title":"BOXING DAY 30% OFF",
-            "promo":"BD50",
-            "couponType":1,
-            "couponDiscount": 30
-        },
-
-        {
-            "couponId":5,
-            "title":" Sharp 50$ 0FF",
-            "promo":"UP50",
+            "title":"FLAT 50$ OFF ",
+            "promo":"SPECIAL50",
             "couponType":2,
             "couponDiscount": 50
         },
 
         {
-            "couponId":6,
-            "title":"UPTO 30% OFF",
-            "promo":"UP30",
-            "couponType":1,
-            "couponDiscount": 30
-        }    
-        
+            "couponId":5,
+            "title":" UPTO 60% 0FF",
+            "promo":"UP60",
+            "couponType":2,
+            "couponDiscount": 60
+        }
+    
     ]
 }
