@@ -14,7 +14,7 @@ $().ready(function () {
                 <span class="fa fa-star" style="color: coral"></span>
                 <span class="fa fa-star" style="color: coral"></span>
                 <span class="fa fa-star" style="color: coral"></span>
-                <span class="fa fa-star" style="color: coral"></span>
+                <span class="fa fa-star" style="color: coral"></span>git
               </p>
               <!-- Address -->
               <p class="restaurant_location">
