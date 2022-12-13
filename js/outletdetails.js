@@ -10,8 +10,7 @@ $(document).ready(function () {
   let queryparams = getQueryParams(window.location.href);
   let outletid = queryparams.outletid;
   $.getJSON('/json/coupon.json', function(response) {
-    availableCoupons = response.coupon;
-    console.log(availableCoupons);
+    availableCoupons = response.coupons;
   });
 
   $.getJSON('/json/outletmenu.json', function(jd) {

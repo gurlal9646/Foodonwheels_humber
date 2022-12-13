@@ -71,9 +71,6 @@
       </nav>
     </header>
     <main>
-      <!-- Add the code in here -->
-      <!-- Heading, image, address are Left alighned-->
-
         <div class="page-wrap">
         <aside>
           <div id="team"></div>
@@ -81,8 +78,24 @@
               <p>Browse your favourite restaurants & feast like never before.</p>
               <br/>
               <div class="product-class">
-              <img src="../images/Food_all.png" alt="Food item"  >
-              <img src="../images/Food.jpeg" alt="Food item" >
+                <a href=""
+                ><img
+                  src="../images/Food_all.png"
+                  name="slideshow"
+                  id="slideshow"
+                /></a>
+                <a href=""
+                ><img
+                  src="../images/Food.jpeg"
+                  name="slideshow"
+                  id="slideshow_f"
+                /></a>
+                <a href=""
+                ><img
+                  src="../images/sandwich.png"
+                  name="slideshow"
+                  id="slideshow_fs"
+                /></a>
               <br/><br/><br/><br/>
               </div>
         </aside>
@@ -149,37 +162,7 @@
         <p>&copy; 2022 Food on wheels. All Rights Reserved.</p>
       </div>
     </footer>
-    <script>
-      $().ready(function () {
-        $.getJSON('../json/outlet.json', function (data) {
-          console.log(data);
-        let dis='';
-        for(let i of data.outlets){
-          dis += `<div class="restaurant_card">
-                <img class="restaurant_img" src="${i.image}" />
-                <div class="restaurant_brief">
-                  <p class="restaurant_title">${i.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128158;</p>
-                  <p class="fow_fee">${i.dfee}</p>
-                  <p class="restaurant_rating">
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                    <span class="fa fa-star" style="color: coral"></span>
-                  </p>
-                  <!-- Address -->
-                  <p class="restaurant_location">
-                    <i class="fa fa-map-marker"></i>&nbsp;
-                    ${i.address}<br/>
-                  </p>
-                  <p class="res_desc">${i.food} &#127836; &#127844;</p>
-                </div>
-              </div>`;
-        }
-          document.getElementById('pdiv').innerHTML = dis;
-        
-        });
-      });
+    <script  src="../js/favourites.js">
     </script>
   </body>
 </html>

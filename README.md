@@ -37,7 +37,10 @@ Support Contact, FAQs, Coupons/
 -	Notifications :Timely updates that encourages users engagement.
 -	Coupons:- Offering discounts to boost the business.
 -	About:- Will provide information to visitors about what do the company do.
--	Favorites:- Will help user to save information abut their favorite food items and outlets.
--	Settings: Update your profile, Change password, Delete account
+-	Favorites:- Will help user to save information abut their favorite food items and outlets.Got the outlets data from the outlet.json via
+-   java script and added feature of automatic slideshow of food items via java-script using ChangeImage function for the images stored in
+-   myImagesArray.
+-	Settings-: Update your profile inforamtion, Delete account and set the notification prefrences.
+-   Used java-script in settings.js file for form-validation of user details input and provided alert error messages based on the entry of -    data, indicating customer to fill required data.Used local storage for retriving user account details suchas name, dob, e-mail.
 
 

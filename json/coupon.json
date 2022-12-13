@@ -5,7 +5,8 @@
             "title":"50% off on purchase above $100",
             "promo":"FLAT50",
             "couponType":1,
-            "couponDiscount": 50
+            "couponDiscount": 50,
+            "Expire": "December 20, 2022"
         },
 
         {
@@ -13,7 +14,8 @@
             "title":"BOXING DAY 30% OFF",
             "promo":"BD30",
             "couponType":1,
-            "couponDiscount": 30
+            "couponDiscount": 30,
+            "Expire": "December 25, 2022"
         },
 
         {
@@ -21,7 +23,8 @@
             "title":"BOXING DAY 50% OFF",
             "promo":"BD50",
             "couponType":1,
-            "couponDiscount": 50
+            "couponDiscount": 50,
+            "Expire": "December 31, 2022"
         },
 
         {
@@ -29,15 +32,17 @@
             "title":"FLAT 50$ OFF ",
             "promo":"SPECIAL50",
             "couponType":2,
-            "couponDiscount": 50
+            "couponDiscount": 50,
+            "Expire": "January 10, 2023"
         },
 
         {
             "couponId":5,
-            "title":" UPTO 60% 0FF",
+            "title":"FLAT 60$ 0FF",
             "promo":"UP60",
             "couponType":2,
-            "couponDiscount": 60
+            "couponDiscount": 60,
+            "Expire": "January 20, 2023"
         }
     
     ]

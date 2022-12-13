@@ -29,7 +29,7 @@ $(document).ready(()=>{
             localStorage.setItem('gender',i.gender);
             localStorage.setItem('language',i.language);
             localStorage.setItem('country',i.country);
-            localStorage.setItem('dob',i.country);
+            localStorage.setItem('dob',i.dob);
             break;
         }
     }

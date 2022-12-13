@@ -139,6 +139,27 @@ const toggle = (evt) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
+  $('#name_s').value =  localStorage.getItem('name');
+  $('#email_address').value =  localStorage.getItem('email');
+  $('#phone').value =  localStorage.getItem('mobile');
+  $('#country').value =  localStorage.getItem('country');
+
+  const [ year, month,day] = localStorage.getItem('dob').split('-');
+  
+  const date = `${year}-${month}-${day}`;
+
+
+  $('#dt').value = date; 
+      //  localStorage.getItem('gender',i.gender);
+      //  localStorage.getItem('language',i.language);
+      //  localStorage.getItem('country',i.country);
+      //  localStorage.getItem('dob',i.country);
+``
+
+
+
   // get the h2 tags
   console.log(settingss);
   const h2Elements = document.querySelectorAll('#settingss h2');

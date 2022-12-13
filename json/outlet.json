@@ -4,20 +4,23 @@
 		"dfee":"$0.99 Delivery Fee(25-30min)",
 		"image":"../images/tim-hortons.png",
 		"address":"12010 Humber Road Ossington",
-        "food":"Bakery.Cafe.Doughnuts"
+        "food":"Bakery.Cafe.Doughnuts",
+		"foodsymbol":"&#127849;&#127850;&#127861;"
     },
 	{
 		"name":"Westown Chineese Food(Junction)",
 		"dfee":"$0.99 Delivery Fee(15-25min)",
 		"image":"../images/chinese_cusiene.png",
 		"address":"1266 Bloor St West Toronto",
-        "food":"Asian.Chinese.Noodles"
+        "food":"Asian.Chinese.Noodles",
+		"foodsymbol":"&#127836; &#127844;"
     },
 	{
 		"name":"Mumbaikar Indian Restaurant and Bar",
 		"dfee":"$1.99 Delivery Fee(25-30min)",
 		"image":"../images/indian_cusiene.png",
 		"address":"1063 Bloor St West Toronto",
-        "food":"Asian.Chinese.Noodles"
+        "food":"Indian.Non-Vegetarian.Alcohol",
+		"foodsymbol":"&#127831; &#127867;"		
     }
 ]}
