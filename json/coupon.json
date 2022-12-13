@@ -10,9 +10,9 @@
 
         {
             "couponId":2,
-            "title":"BLACK FRIDAY 30% OFF",
+            "title":"BLACK FRIDAY 30$ OFF",
             "promo":"BF30",
-            "couponType":1,
+            "couponType":2,
             "couponDiscount": 30
         },
 
@@ -34,7 +34,7 @@
 
         {
             "couponId":5,
-            "title":" UPTO 50% 0FF",
+            "title":" Sharp 50$ 0FF",
             "promo":"UP50",
             "couponType":2,
             "couponDiscount": 50
@@ -44,12 +44,9 @@
             "couponId":6,
             "title":"UPTO 30% OFF",
             "promo":"UP30",
-            "couponType":2,
+            "couponType":1,
             "couponDiscount": 30
-        },
-
-        
-        
+        }    
         
     ]
 }
