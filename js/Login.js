@@ -33,8 +33,13 @@ $(document).ready(()=>{
             break;
         }
     }
+
     if(isValid){
         window.location.href = "../html/dashboard.html";
+    }
+    else{
+        document.getElementById('password').value ='';
+        alert('Invalid username or password');
     }
      
   }
