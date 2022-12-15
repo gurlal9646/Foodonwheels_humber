@@ -10,8 +10,12 @@ function validate() {
   
   if (cname.value == '') {
     cname.nextElementSibling.innerHTML = 'Please enter name on card';
+    return;
   } 
   if (cardnumber.value == '') {
     cardnumber.nextElementSibling.innerHTML = 'Please enter card number';
+    return;
   } 
+
+  alert('Card Added');
 }
