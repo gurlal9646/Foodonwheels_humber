@@ -21,7 +21,7 @@ $(document).ready(()=>{
     let password = document.getElementById('password').value;
     let isValid = false;
     for (let i of credentialList){
-        if(i.username == username && i.password == password){
+        if(i.username.toLowerCase() == username.toLowerCase() && i.password.toLowerCase() == password.toLowerCase()){
             isValid = true;
             localStorage.setItem('name',i.name);
             localStorage.setItem('email',i.username);
