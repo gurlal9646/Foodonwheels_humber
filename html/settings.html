@@ -96,17 +96,14 @@
               </ol>
               <br/><br/>
               <form method="get" id="form1">
-                <label for="name_s">Name:</label>
-                <input type="text" id="name_s" name="name_s" required/>
-                <span>*</span>
+                <label for="name_s">Name:</label><span>*</span>
+                <input class="form-control" type="text" id="name_s" name="name_s" required/>          
                 <br>
-                <label for="email_address">Email: </label>
-                <input type="text" id="email_address" name="email_address" required />
-                <span>*</span>
+                <label for="email_address">Email: </label><span>*</span>
+                <input class="form-control"  type="text" id="email_address" name="email_address" required />
                 <br>
-                <label for="phone">Contact: </label>
-                <input type="text" id="phone" name="phone" required/>
-                <span>*</span>
+                <label for="phone">Contact: </label><span>*</span>
+                <input class="form-control"  type="text" id="phone" name="phone" required/>
                 <br>
                 <label for="Gender">Gender: </label>
                 <input type="radio" id="m" name="gender" value="m" checked /> Male
@@ -117,19 +114,17 @@
                 <input type="checkbox" id="Eg" name="lang" value="html" checked /> English
                 <input type="checkbox" id="Fr" name="lang" value="css" /> French
                 <input type="checkbox" id="Pj" name="lang" value="js" /> Punjabi <br />
-                <label for="Country">Country: </label>
-                <select name="country" id="country">
+                <label for="Country">Country: </label> <span>*</span>
+                <select class="form-control"  name="country" id="country">
                   <option value="" selected></option>
                   <option value="ca">Canada</option>
                   <option value="us">USA</option>
                   <option value="mx">Mexico</option>
                   <option value="India">India</option>
-                </select>
-                <span>*</span>
+                </select>             
                 <br />
-                <label for="Date">Birthday: </label>
-                <input type="date" id="dt" name="date" />
-                <span>*</span>
+                <label for="Date">Birthday: </label> <span>*</span>
+                <input class="form-control"  type="date" id="dt" name="date" />
                 <br />
                 <input type="button" id="choice" class="btn" value="Update Profile" name="btnSubmit" />
               </form>  
@@ -147,14 +142,14 @@
               <input type="radio" id="res-3" name="reason"  /> I am worried about my privacy <br />
               <input type="radio" id="res-4" name="reason"  /> You are sending me too many notifications <br />
               <input type="radio" id="res-5" name="reason" /> Other
-              <span>*</span>
+              
               <br /><br />
-              <label for="Feedback" id="fdd">Feedback: </label>
+              <label for="Feedback" id="fdd">Feedback: </label> <span>*</span>
               <br />
               <textarea cols="40" rows="5" name="feedback" id="feedback"></textarea> 
-              <span>*</span>
+             
               <br />
-              <input type="button" id="choice_s" value="Delete my account now !!! " name="btnSubmit_s" />
+              <input type="button"  class="btn"  id="choice_s" value="Delete my account now !!! " name="btnSubmit_s" />
             </form>
             </div>
             <br/>
@@ -167,7 +162,7 @@
               <form method="get">
                 <label for="Enable all" class="text-np">Enable all:</label>
                 <input type="checkbox" id="not-1" name="notpref" value="1" /><br />
-                <p>Activate all notifications</p><br />
+                <p>Activate all notifications</p><br /><span>*</span>
                 <label for="Promos" class="text-np">Promos and offers</label><br />
                 <p>Receive updates about coupons,promotions and money-saving offers </p>
                 <label for="Mail" class="text-np">&#128232; E-mail</label>
@@ -176,13 +171,12 @@
                 <input type="checkbox" id="not-3" name="notpref" value="3" /> <br />
                 <label for="text-msg" class="text-npsf">&#9990; WhatsApp</label>
                 <input type="checkbox" id="not-4" name="notpref" value="4" /> 
-                <span>*</span>
+                
                 <br /><br>
                 <h3>Any Feedback: </h3>
-                <textarea cols="40" rows="5" name="feedback" id="feedback_np"></textarea> 
-                <span>*</span>
+                <textarea class="form-control" cols="40" rows="5" name="feedback" id="feedback_np"></textarea> 
                 <br />
-                <input type="button" id="choice_np" value="Submit !!! " name="btnSubmit_np" />
+                <input type="button"  class="btn"  id="choice_np" value="Submit !!! " name="btnSubmit_np" />
               </form> 
             </div>
        </section>
