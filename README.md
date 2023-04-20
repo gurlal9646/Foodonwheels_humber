@@ -43,4 +43,4 @@ Support Contact, FAQs, Coupons/
 -	Settings-: Update your profile inforamtion, Delete account and set the notification prefrences.
 -   Used java-script in settings.js file for form-validation of user details input and provided alert error messages based on the entry of -    data, indicating customer to fill required data.Used local storage for retriving user account details suchas name, dob, e-mail.
 
-
+- Project Url : https://foodonwhels.netlify.app/
