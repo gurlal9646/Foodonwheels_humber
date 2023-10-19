@@ -9,7 +9,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url('food-background-image.jpg') center/cover no-repeat; /* Use a food-related background image */
+  background: url('../images/loginbg.jpg') center/cover no-repeat; /* Use a food-related background image */
   height: 100vh;
   overflow: hidden;
 }
